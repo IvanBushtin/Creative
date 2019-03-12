@@ -7,11 +7,22 @@
   background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/top-section-bg.png") center/cover no-repeat;
 }
 
+.top-section-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .top-section-text-wrapper-1 {
   max-width: 560px;
+  width: 100%;
   margin: 167px auto 154px;
   text-align: center;
   color: $primary-color;
+
+  @media (max-width: 991px) {
+    margin-bottom: 90px;
+  }
 
   .top-section-text-wrapper-1-label {
     display: flex;
@@ -35,6 +46,15 @@
     font: 700 48px $second-font;
     text-transform: uppercase;
     white-space: nowrap;
+
+    @media (max-width: 535px) {
+      font-size: 40px;
+    }
+    @media (max-width: 480px) {
+      font-size: 30px;
+      padding: 20px 10px;
+      border: 5px solid $primary-color;
+    }
   }
 
   .top-section-text-wrapper-1-paragraph {
@@ -44,16 +64,23 @@
 }
 
 .top-section-text-wrapper-2 {
-  float: right;
   max-width: 550px;
+  width: 100%;
+  align-self: flex-end;
   text-align: left;
   color: $primary-color;
+  @media (max-width: 1199px) {
+    max-width: 420px;
+  }
 
   .top-section-text-wrapper-2-header {
     margin-bottom: 30px;
     font: 700 30px $primary-font;
     text-transform: uppercase;
     white-space: nowrap;
+    @media (max-width: 460px) {
+      font-size: 25px;
+    }
   }
 
   .top-section-text-wrapper-2-paragraph {
@@ -64,13 +91,41 @@
 
 .top-section-img {
   position: absolute;
+  bottom: -160px;
+  @media (max-width: 991px) {
+    bottom: -220px;
+    left: 0;
+  }
 
   img {
     max-width: 458px;
     width: 100%;
+
+    @media (max-width: 991px) {
+      max-width: 320px;
+    }
   }
 }
 
 .top-section-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 165px;
+  width: 100%;
+  min-height: 50px;
+  background-color: $button-color;
+  color: #fff;
+  font: 700 14px $primary-font;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $primary-color;
+    text-decoration: none;
+    color: #fff;
+  }
 }
