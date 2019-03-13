@@ -1,3 +1,33 @@
 @import "variables";
 @import "header";
 @import "top-section";
+@import "about";
+
+.header-mark {
+  width: 67px;
+  height: 21px;
+  position: absolute;
+  bottom: -4px;
+  z-index: -1;
+  background-color: $button-color;
+}
+
+.section-header {
+  position: relative;
+  z-index: 1;
+  max-width: 270px;
+  margin: 0 auto;
+  text-align: center;
+  color: $primary-color;
+  font: 700 30px $primary-font;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.section-paragraph {
+  max-width: 765px;
+  margin: 30px auto 100px;
+  text-align: center;
+  color: $primary-color;
+  font: 400 14px $second-font;
+}

@@ -1,0 +1,31 @@
+@import "variables";
+
+.about {
+  padding-top: 250px;
+  color: $primary-color;
+}
+
+.about-list {
+  margin-bottom: 60px;
+}
+
+.about-header {
+  margin: 20px 0;
+  font: 700 18px $primary-font;
+  text-transform: uppercase;
+}
+
+.about-text {
+  display: block;
+  margin-bottom: 10px;
+  color: $text-color;
+  font: 400  14px $second-font;
+  white-space: nowrap;
+}
+
+.about-img {
+  width: 100%;
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
+}
