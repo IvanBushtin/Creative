@@ -1,0 +1,37 @@
+@import "variables";
+
+.portfolio {
+  padding-bottom: 150px;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+
+  &__section-header {
+    max-width: 160px;
+    margin: 0;
+    text-align: left;
+    white-space: normal;
+    line-height: 48px;
+  }
+
+  .side-menu-link {
+    display: flex;
+    white-space: nowrap;
+    color: $primary-color;
+    font: 700 14px/30px $primary-font;
+    text-transform: uppercase;
+    padding-left: 20px;
+
+    &:hover {
+      padding-left: 10px;
+      text-decoration: none;
+      background-color: $button-color;
+    }
+  }
+}
+
+.grid-item {
+  margin-bottom: 30px;
+}

@@ -1,3 +1,30 @@
+.header-mark {
+  width: 67px;
+  height: 21px;
+  position: absolute;
+  bottom: -4px;
+  left: 2px;
+  z-index: -1;
+  background-color: #7beec7; }
+
+.section-header {
+  position: relative;
+  z-index: 1;
+  max-width: 270px;
+  margin: 0 auto;
+  text-align: center;
+  color: #60606e;
+  font: 700 30px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap; }
+
+.section-paragraph {
+  max-width: 765px;
+  margin: 30px auto 100px;
+  text-align: center;
+  color: #60606e;
+  font: 400 14px "Open Sans", sans-serif; }
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -188,6 +215,7 @@ nav {
 
 .about {
   padding-top: 250px;
+  padding-bottom: 150px;
   color: #60606e; }
 
 .about-list {
@@ -211,28 +239,29 @@ nav {
     .about-img {
       margin-top: 30px; } }
 
-.header-mark {
-  width: 67px;
-  height: 21px;
-  position: absolute;
-  bottom: -4px;
-  z-index: -1;
-  background-color: #7beec7; }
+.portfolio {
+  padding-bottom: 150px; }
 
-.section-header {
-  position: relative;
-  z-index: 1;
-  max-width: 270px;
-  margin: 0 auto;
-  text-align: center;
-  color: #60606e;
-  font: 700 30px "Montserrat", sans-serif;
-  text-transform: uppercase;
-  white-space: nowrap; }
+.side-menu {
+  display: flex;
+  flex-direction: column; }
+  .side-menu__section-header {
+    max-width: 160px;
+    margin: 0;
+    text-align: left;
+    white-space: normal;
+    line-height: 48px; }
+  .side-menu .side-menu-link {
+    display: flex;
+    white-space: nowrap;
+    color: #60606e;
+    font: 700 14px/30px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    padding-left: 20px; }
+    .side-menu .side-menu-link:hover {
+      padding-left: 10px;
+      text-decoration: none;
+      background-color: #7beec7; }
 
-.section-paragraph {
-  max-width: 765px;
-  margin: 30px auto 100px;
-  text-align: center;
-  color: #60606e;
-  font: 400 14px "Open Sans", sans-serif; }
+.grid-item {
+  margin-bottom: 30px; }

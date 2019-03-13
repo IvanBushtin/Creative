@@ -1,13 +1,11 @@
 @import "variables";
-@import "header";
-@import "top-section";
-@import "about";
 
 .header-mark {
   width: 67px;
   height: 21px;
   position: absolute;
   bottom: -4px;
+  left: 2px;
   z-index: -1;
   background-color: $button-color;
 }
@@ -31,3 +29,8 @@
   color: $primary-color;
   font: 400 14px $second-font;
 }
+
+@import "header";
+@import "top-section";
+@import "about";
+@import "portfolio";
