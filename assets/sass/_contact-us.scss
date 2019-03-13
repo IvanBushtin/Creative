@@ -1,0 +1,74 @@
+@import "variables";
+
+.contact-us {
+  padding: 50px 0;
+  background-color: $button-color;
+
+  .contact-us-header {
+    color: #fff;
+    font: 700 30px/48px $primary-font;
+    text-transform: uppercase;
+  }
+
+  .contact-us-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 165px;
+    width: 100%;
+    min-height: 50px;
+    background-color: #fff;
+    color: $button-color;
+    font: 700 14px $primary-font;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $primary-color;
+    }
+  }
+
+  .contact-us-form {
+    padding: 20px 25px;
+    background-color: #fff;
+  }
+
+  .contact-us-form-header {
+    max-width: 340px;
+    color: $primary-color;
+    font: 700 24px/36px $primary-font;
+    text-transform: uppercase;
+  }
+
+  .contact-us-form-paragraph {
+    max-width: 480px;
+    margin: 15px 0 25px;
+    color: $text-color;
+    font: 400 16px/24px $second-font;
+  }
+
+  .contact-us-form-input {
+    max-width: 375px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-us-form-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 135px;
+    width: 100%;
+    min-height: 50px;
+    background-color: $button-color;
+    color: #fff;
+    font: 700 14px $primary-font;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $primary-color;
+
+    }
+  }
+}
