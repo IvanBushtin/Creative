@@ -1,0 +1,58 @@
+@import "variables";
+
+.footer {
+  padding: 50px 0;
+  position: relative;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9a9a9a;
+  font: 400 14px $second-font;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  @media (max-width: 767px){
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 410px) {
+    font-size: 10px;
+  }
+
+  .footer-nav-list-item {
+    cursor: pointer;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+
+    &:hover {
+      border-bottom: 2px solid #9a9a9a;
+    }
+  }
+}
+
+.footer-paragraph {
+  max-width: 350px;
+  margin-left: auto;
+  text-align: right;
+  color: $text-color;
+  font: 400 14px $second-font;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 180px;
+  margin-left: auto;
+
+  .footer-social-list-link {
+    color: $text-color;
+    &:hover {
+      color: $button-color;
+    }
+  }
+}

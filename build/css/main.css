@@ -1,4 +1,5 @@
 .header-mark {
+  display: block;
   width: 67px;
   height: 21px;
   position: absolute;
@@ -25,7 +26,7 @@
   color: #60606e;
   font: 400 14px "Open Sans", sans-serif; }
 
-nav {
+.nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -290,6 +291,9 @@ nav {
   .contact-us .contact-us-form {
     padding: 20px 25px;
     background-color: #fff; }
+    @media (max-width: 991px) {
+      .contact-us .contact-us-form {
+        margin-top: 20px; } }
   .contact-us .contact-us-form-header {
     max-width: 340px;
     color: #60606e;
@@ -299,12 +303,15 @@ nav {
     max-width: 480px;
     margin: 15px 0 25px;
     color: #999999;
-    font: 400 16px/24px "Open Sans", sans-serif; }
+    font: 400 15px/24px "Open Sans", sans-serif; }
   .contact-us .contact-us-form-input {
     max-width: 375px;
     width: 100%;
-    padding: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1); }
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #cdcdcd;
+    font: 700 12px "Montserrat", sans-serif;
+    text-transform: uppercase; }
   .contact-us .contact-us-form-button {
     display: inline-flex;
     justify-content: center;
@@ -312,9 +319,54 @@ nav {
     max-width: 135px;
     width: 100%;
     min-height: 50px;
+    margin-left: -4px;
     background-color: #7beec7;
     color: #fff;
     font: 700 14px "Montserrat", sans-serif;
     text-transform: uppercase; }
     .contact-us .contact-us-form-button:hover {
       background-color: #60606e; }
+
+.footer {
+  padding: 50px 0;
+  position: relative; }
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #9a9a9a;
+  font: 400 14px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap; }
+  @media (max-width: 767px) {
+    .footer-nav-list {
+      margin-bottom: 20px; } }
+  @media (max-width: 410px) {
+    .footer-nav-list {
+      font-size: 10px; } }
+  .footer-nav-list .footer-nav-list-item {
+    cursor: pointer;
+    padding-bottom: 5px;
+    box-sizing: border-box; }
+    .footer-nav-list .footer-nav-list-item:hover {
+      border-bottom: 2px solid #9a9a9a; }
+
+.footer-paragraph {
+  max-width: 350px;
+  margin-left: auto;
+  text-align: right;
+  color: #999999;
+  font: 400 14px "Open Sans", sans-serif;
+  text-transform: uppercase; }
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 180px;
+  margin-left: auto; }
+  .footer-social-list .footer-social-list-link {
+    color: #999999; }
+    .footer-social-list .footer-social-list-link:hover {
+      color: #7beec7; }

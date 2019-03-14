@@ -31,6 +31,10 @@
   .contact-us-form {
     padding: 20px 25px;
     background-color: #fff;
+
+    @media (max-width: 991px) {
+      margin-top: 20px;
+    }
   }
 
   .contact-us-form-header {
@@ -44,14 +48,17 @@
     max-width: 480px;
     margin: 15px 0 25px;
     color: $text-color;
-    font: 400 16px/24px $second-font;
+    font: 400 15px/24px $second-font;
   }
 
   .contact-us-form-input {
     max-width: 375px;
     width: 100%;
-    padding: 15px;
+    padding: 16px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #cdcdcd;
+    font: 700 12px $primary-font;
+    text-transform: uppercase;
   }
 
   .contact-us-form-button {
@@ -61,6 +68,7 @@
     max-width: 135px;
     width: 100%;
     min-height: 50px;
+    margin-left: -4px;
     background-color: $button-color;
     color: #fff;
     font: 700 14px $primary-font;
