@@ -73,6 +73,7 @@
   align-items: center;
   position: absolute;
   right: 0;
+  z-index: 12;
   color: #9a9a9a;
   font: 400 14px $second-font;
   text-transform: uppercase;
@@ -88,24 +89,31 @@
 
   .nav-list-item {
     cursor: pointer;
-    padding: 5px 0;
     margin-right: 40px;
 
     @media (max-width: 767px) {
       margin-right: 0;
+      margin-bottom: 10px;
     }
 
     a {
       text-align: right;
     }
 
-
     &:last-child {
       margin-right: 0;
     }
+  }
+}
 
-    &:hover {
-      border-bottom: 2px solid #9a9a9a;
-    }
+.nav-list-link {
+  color: #9a9a9a;
+  text-decoration: none;
+
+  &:hover {
+    color: #9a9a9a;
+    text-decoration: none;
+    border-bottom: 2px solid #9a9a9a;
+    padding: 5px 0;
   }
 }
