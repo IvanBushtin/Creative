@@ -1,0 +1,23 @@
+@import "variables";
+
+.about-top-section {
+  min-height: 500px;
+  padding-top: 20px;
+  background: url("../img/About-top-section-bg.png") center/cover no-repeat;
+
+  &__section-header {
+    margin-top: 210px;
+    font-size: 36px;
+  }
+
+  .about-top-section-span{
+    max-width: 120px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    color: $primary-color;
+    font: 700 14px/48px $primary-font;
+    text-transform: uppercase;
+  }
+}
+

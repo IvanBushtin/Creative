@@ -1,0 +1,34 @@
+@import "variables";
+
+.about-team {
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.team-list {
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 30px;
+  background-color: #cdcdcd;
+  @media (min-width: 576px) {
+    flex-wrap: nowrap;
+  }
+
+  .bar-paragraph {
+    text-align: left;
+    color: $primary-color;
+    font: italic 18px $second-font;
+  }
+
+  &__top-section-button {
+    margin-top: -15px;
+  }
+}

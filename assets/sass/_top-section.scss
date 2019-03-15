@@ -5,6 +5,12 @@
   min-height: 860px;
   padding: 20px 0 60px;
   background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/top-section-bg.png") center/cover no-repeat;
+
+  &__section-button {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+  }
 }
 
 .top-section-text-wrapper {
@@ -106,28 +112,5 @@
     @media (max-width: 991px) {
       max-width: 320px;
     }
-  }
-}
-
-.top-section-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: -60px;
-  right: 0;
-  max-width: 165px;
-  width: 100%;
-  min-height: 50px;
-  background-color: $button-color;
-  color: #fff;
-  font: 700 14px $primary-font;
-  text-transform: uppercase;
-  white-space: nowrap;
-
-  &:hover {
-    background-color: $primary-color;
-    text-decoration: none;
-    color: #fff;
   }
 }

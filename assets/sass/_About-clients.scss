@@ -1,0 +1,44 @@
+@import "variables";
+
+.about-clients {
+  padding-bottom: 150px;
+  text-align: center;
+
+  .clients-list {
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.carousel-indicators {
+  li {
+    width: 16px;
+    height: 5px;
+    background-color: $primary-color;
+    cursor: pointer;
+  }
+
+  .active {
+    width: 31px;
+    background-color: $button-color;
+  }
+}
+
+.carousel-item {
+  &__section-paragraph {
+    margin: 25px auto;
+  }
+
+  &__section-button {
+    max-width: 99px;
+    min-height: 29px;
+    margin: 0 auto 40px;
+  }
+
+  img {
+    max-width: 83px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -31,9 +31,34 @@
   font: 400 14px $second-font;
 }
 
+.section-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 165px;
+  width: 100%;
+  min-height: 50px;
+  background-color: $button-color;
+  color: #fff;
+  font: 700 14px $primary-font;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $primary-color;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
 @import "header";
 @import "top-section";
 @import "about";
 @import "portfolio";
 @import "contact-us";
 @import "footer";
+@import "About-top-section";
+@import "About-info";
+@import "About-benefits";
+@import "About-team";
+@import "About-clients";
